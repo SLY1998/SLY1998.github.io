@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>【docker】核心概念总结 | 凡年换酒柴1998🌸</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.bb11cb17.css" as="style"><link rel="preload" href="/assets/js/app.417c9d3b.js" as="script"><link rel="preload" href="/assets/js/4.277e189b.js" as="script"><link rel="preload" href="/assets/js/1.2abb3401.js" as="script"><link rel="preload" href="/assets/js/26.959e44c1.js" as="script"><link rel="prefetch" href="/assets/js/10.b8e69c1a.js"><link rel="prefetch" href="/assets/js/11.b897fc1f.js"><link rel="prefetch" href="/assets/js/12.9039278d.js"><link rel="prefetch" href="/assets/js/13.823217b7.js"><link rel="prefetch" href="/assets/js/14.457c4815.js"><link rel="prefetch" href="/assets/js/15.9d56bd77.js"><link rel="prefetch" href="/assets/js/16.d5cd3c67.js"><link rel="prefetch" href="/assets/js/17.55052789.js"><link rel="prefetch" href="/assets/js/18.a6ff5e3f.js"><link rel="prefetch" href="/assets/js/19.141b5e65.js"><link rel="prefetch" href="/assets/js/20.b01f5c6f.js"><link rel="prefetch" href="/assets/js/21.d0c32bb8.js"><link rel="prefetch" href="/assets/js/22.a009c2c2.js"><link rel="prefetch" href="/assets/js/23.71031a90.js"><link rel="prefetch" href="/assets/js/24.ae83de9e.js"><link rel="prefetch" href="/assets/js/25.d65ea841.js"><link rel="prefetch" href="/assets/js/27.f9bbc06d.js"><link rel="prefetch" href="/assets/js/28.d00e4382.js"><link rel="prefetch" href="/assets/js/29.61b2921e.js"><link rel="prefetch" href="/assets/js/30.be9681df.js"><link rel="prefetch" href="/assets/js/31.489baec7.js"><link rel="prefetch" href="/assets/js/32.f9e36c2e.js"><link rel="prefetch" href="/assets/js/33.ec399f96.js"><link rel="prefetch" href="/assets/js/34.e1ed118e.js"><link rel="prefetch" href="/assets/js/35.7461328e.js"><link rel="prefetch" href="/assets/js/36.e3d6c1c2.js"><link rel="prefetch" href="/assets/js/37.359a3b6d.js"><link rel="prefetch" href="/assets/js/38.64f5d140.js"><link rel="prefetch" href="/assets/js/39.e65cd073.js"><link rel="prefetch" href="/assets/js/40.acab9724.js"><link rel="prefetch" href="/assets/js/41.73c8ae74.js"><link rel="prefetch" href="/assets/js/42.15269a18.js"><link rel="prefetch" href="/assets/js/43.a47aed1f.js"><link rel="prefetch" href="/assets/js/44.03f119f1.js"><link rel="prefetch" href="/assets/js/45.353a17b2.js"><link rel="prefetch" href="/assets/js/46.2468d8a4.js"><link rel="prefetch" href="/assets/js/47.2c41eda4.js"><link rel="prefetch" href="/assets/js/48.2245857a.js"><link rel="prefetch" href="/assets/js/49.1223ac5a.js"><link rel="prefetch" href="/assets/js/5.ef32f296.js"><link rel="prefetch" href="/assets/js/50.1a5dfc7e.js"><link rel="prefetch" href="/assets/js/51.2b6528fa.js"><link rel="prefetch" href="/assets/js/52.e5da137a.js"><link rel="prefetch" href="/assets/js/6.8d1c67ea.js"><link rel="prefetch" href="/assets/js/7.bace46d4.js"><link rel="prefetch" href="/assets/js/8.83c808ec.js"><link rel="prefetch" href="/assets/js/9.a1917f46.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.a2993a10.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bb11cb17.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-58d791b2><div data-v-58d791b2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-08f61db9 data-v-58d791b2 data-v-58d791b2><h3 class="title" data-v-08f61db9>凡年换酒柴1998🌸</h3> <p class="description" data-v-08f61db9>天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。</p> <label id="box" class="inputBox" data-v-08f61db9><input type="password" value="" data-v-08f61db9> <span data-v-08f61db9>Konck! Knock!</span> <button data-v-08f61db9>OK</button></label> <div class="footer" data-v-08f61db9><span data-v-08f61db9><i class="iconfont reco-theme" data-v-08f61db9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-08f61db9>vuePress-theme-reco</a></span> <span data-v-08f61db9><i class="iconfont reco-copyright" data-v-08f61db9></i> <a data-v-08f61db9><span data-v-08f61db9>凡年换酒柴1998🌸</span>
+          
+        <span data-v-08f61db9>2022 - </span>
+        2026
+      </a></span></div></div> <div class="hide" data-v-58d791b2><header class="navbar" data-v-58d791b2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="凡年换酒柴1998🌸" class="logo"> <span class="site-name">凡年换酒柴1998🌸</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计算机基础/" class="nav-link"><i class="undefined"></i>
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端工程化/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端基础/" class="nav-link"><i class="undefined"></i>
+  前端基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习/" class="nav-link"><i class="undefined"></i>
+  学习
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端八股文🥬/" class="nav-link"><i class="undefined"></i>
+  前端八股文🥬
+</a></li><li class="dropdown-item"><!----> <a href="/categories/技术分享/" class="nav-link"><i class="undefined"></i>
+  技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作记录/" class="nav-link"><i class="undefined"></i>
+  工作记录
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="https://sly1998.github.io/myDemo/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-message"></i>
+  demo展示
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/SLY1998" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  gitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-58d791b2></div> <aside class="sidebar" data-v-58d791b2><div class="personal-info-wrapper" data-v-3d87d2e4 data-v-58d791b2><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-3d87d2e4> <h3 class="name" data-v-3d87d2e4>
+    凡年换酒柴1998🌸
+  </h3> <div class="num" data-v-3d87d2e4><div data-v-3d87d2e4><h3 data-v-3d87d2e4>41</h3> <h6 data-v-3d87d2e4>文章</h6></div> <div data-v-3d87d2e4><h3 data-v-3d87d2e4>26</h3> <h6 data-v-3d87d2e4>标签</h6></div></div> <ul class="social-links" data-v-3d87d2e4></ul> <hr data-v-3d87d2e4></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/计算机基础/" class="nav-link"><i class="undefined"></i>
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端工程化/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端基础/" class="nav-link"><i class="undefined"></i>
+  前端基础
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习/" class="nav-link"><i class="undefined"></i>
+  学习
+</a></li><li class="dropdown-item"><!----> <a href="/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端八股文🥬/" class="nav-link"><i class="undefined"></i>
+  前端八股文🥬
+</a></li><li class="dropdown-item"><!----> <a href="/categories/技术分享/" class="nav-link"><i class="undefined"></i>
+  技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作记录/" class="nav-link"><i class="undefined"></i>
+  工作记录
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="https://sly1998.github.io/myDemo/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-message"></i>
+  demo展示
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/SLY1998" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  gitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-08f61db9 data-v-58d791b2><h3 class="title" data-v-08f61db9>【docker】核心概念总结</h3> <!----> <label id="box" class="inputBox" data-v-08f61db9><input type="password" value="" data-v-08f61db9> <span data-v-08f61db9>Konck! Knock!</span> <button data-v-08f61db9>OK</button></label> <div class="footer" data-v-08f61db9><span data-v-08f61db9><i class="iconfont reco-theme" data-v-08f61db9></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-08f61db9>vuePress-theme-reco</a></span> <span data-v-08f61db9><i class="iconfont reco-copyright" data-v-08f61db9></i> <a data-v-08f61db9><span data-v-08f61db9>凡年换酒柴1998🌸</span>
+          
+        <span data-v-08f61db9>2022 - </span>
+        2026
+      </a></span></div></div> <div data-v-58d791b2><div data-v-58d791b2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">【docker】核心概念总结</h1> <div data-v-162cc157><i class="iconfont reco-account" data-v-162cc157><span data-v-162cc157>凡年换酒柴1998🌸</span></i> <i class="iconfont reco-date" data-v-162cc157><span data-v-162cc157>2025/12/24</span></i> <i class="iconfont reco-eye" data-v-162cc157><span id="/blogs/backend/docker.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-162cc157><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-162cc157><span class="tag-item" data-v-162cc157>docker</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="容器介绍"><a href="#容器介绍" class="header-anchor">#</a> 容器介绍</h2> <h3 id="什么是容器"><a href="#什么是容器" class="header-anchor">#</a> 什么是容器？</h3> <p>容器就是将软件打包成标准化单元，以用于开发、交付和部署</p> <h3 id="容器-vs-虚拟机"><a href="#容器-vs-虚拟机" class="header-anchor">#</a> 容器 VS 虚拟机</h3> <ul><li>容器虚拟化的是操作系统而不是硬件，容器之间是共享同一套操作系统资源的。</li> <li>虚拟机技术是虚拟出一套硬件后，在其上运行一个完整操作系统。</li></ul> <p>因此容器的隔离级别会稍低一些</p> <p>Docker 通常用于隔离不同的应用 ，例如前端，后端以及数据库</p> <h3 id="docker-基本概念"><a href="#docker-基本概念" class="header-anchor">#</a> docker 基本概念</h3> <p>镜像（Image）、容器（Container）和仓库（Repository）</p> <ul><li>镜像(Image):一个特殊的文件系统，它提供了容器运行时所需的代码和库文件。</li> <li>容器(Container):镜像的运行实例，它可以被启动、停止、删除等操作。</li> <li>仓库(Repository):用于存储和分发镜像的地方，Docker Hub 是一个公共的仓库，也可以搭建私有的仓库。</li></ul> <h3 id="常见命令"><a href="#常见命令" class="header-anchor">#</a> 常见命令</h3> <h4 id="基本命令"><a href="#基本命令" class="header-anchor">#</a> 基本命令</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">docker</span> version <span class="token comment"># 查看docker版本</span>
+<span class="token function">docker</span> images <span class="token comment"># 查看所有已下载镜像，等价于：docker image ls 命令</span>
+<span class="token function">docker</span> container <span class="token function">ls</span> <span class="token comment"># 查看所有容器</span>
+<span class="token function">docker</span> <span class="token function">ps</span> <span class="token comment">#查看正在运行的容器</span>
+<span class="token function">docker</span> image prune <span class="token comment"># 清理临时的、没有被使用的镜像文件。-a, --all: 删除所有没有用的镜像，而不仅仅是临时文件；</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="拉取镜像"><a href="#拉取镜像" class="header-anchor">#</a> 拉取镜像</h4> <p>docker pull 命令默认使用的 Registry/Hub 是 Docker Hub。当你执行 docker pull 命令而没有指定任何 Registry/Hub 的地址时，Docker 会从 Docker Hub 拉取镜像。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">docker</span> search mysql <span class="token comment"># 查看mysql相关镜像</span>
+<span class="token function">docker</span> pull mysql:5.7 <span class="token comment"># 拉取mysql镜像</span>
+<span class="token function">docker</span> image <span class="token function">ls</span> <span class="token comment"># 查看所有已下载镜像</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="构建镜像"><a href="#构建镜像" class="header-anchor">#</a> 构建镜像</h4> <p>运行 docker build命令并指定一个 Dockerfile 时，Docker 会读取 Dockerfile 中的指令，逐步构建一个新的镜像，并将其保存在本地。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">docker</span> build <span class="token parameter variable">-t</span> my-mysql:5.7 <span class="token builtin class-name">.</span> <span class="token comment"># 构建mysql镜像</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>需要注意：Dockerfile 的文件名不必须为 Dockerfile，也不一定要放在构建上下文的根目录中。使用 -f 或 --file 选项，可以指定任何位置的任何文件作为 Dockerfile。当然，一般大家习惯性的会使用默认的文件名 Dockerfile，以及会将其置于镜像构建上下文目录中。</p></blockquote> <h4 id="删除镜像"><a href="#删除镜像" class="header-anchor">#</a> 删除镜像</h4> <p>通过 docker rmi [image] （等价于docker image rm [image]）删除镜像之前首先要确保这个镜像没有被容器引用（可以通过标签名称或者镜像 ID 删除）。通过我们前面讲的docker ps命令即可查看。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>➜  ~ <span class="token function">docker</span> <span class="token function">ps</span>
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
+c4cd691d9f80        mysql:5.7           <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   <span class="token number">7</span> weeks ago         Up <span class="token number">12</span> days          <span class="token number">0.0</span>.0.0:3306-<span class="token operator">&gt;</span><span class="token number">3306</span>/tcp, <span class="token number">33060</span>/tcp   mysql
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>可以看到 mysql 正在被 id 为 c4cd691d9f80 的容器引用，我们需要首先通过 docker stop c4cd691d9f80 或者 docker stop mysql暂停这个容器。</p> <p>然后查看 mysql 镜像的 id</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>➜  ~ <span class="token function">docker</span> images
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+mysql                   <span class="token number">5.7</span>                 f6509bac4980        <span class="token number">3</span> months ago        373MB
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>通过 IMAGE ID 或者 REPOSITORY 名字即可删除</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> rmi f6509bac4980 <span class="token comment">#  或者 docker rmi mysql</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="镜像推送"><a href="#镜像推送" class="header-anchor">#</a> 镜像推送</h4> <p>docker push 命令用于将本地的 Docker 镜像上传到指定的 Registry/Hub。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 将镜像推送到私有镜像仓库 Harbor</span>
+<span class="token comment"># harbor.example.com是私有镜像仓库的地址，ubuntu是镜像的名称，18.04是镜像的版本标签</span>
+<span class="token function">docker</span> push harbor.example.com/ubuntu:18.04
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>镜像推送之前，要确保本地已经构建好需要推送的 Docker 镜像。另外，务必先登录到对应的镜像仓库。</p></blockquote> <h3 id="docker-数据管理"><a href="#docker-数据管理" class="header-anchor">#</a> Docker 数据管理</h3> <p>在容器中管理数据主要有两种方式：</p> <ul><li>挂载主机目录</li> <li>使用数据卷</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 创建一个数据卷</span>
+<span class="token function">docker</span> volume create my-vol
+<span class="token comment"># 查看所有的数据卷</span>
+<span class="token function">docker</span> volume <span class="token function">ls</span>
+<span class="token comment"># 查看数据卷的具体信息</span>
+<span class="token function">docker</span> inspect web
+<span class="token comment"># 删除指定的数据卷</span>
+<span class="token function">docker</span> volume <span class="token function">rm</span> my-vol
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="docker-compose"><a href="#docker-compose" class="header-anchor">#</a> Docker Compose</h3> <p>什么是 Docker Compose？有什么作用？</p> <p>Docker Compose 是一个用于定义和运行多容器 Docker 应用的工具。它允许你使用一个 YAML 文件来配置应用的服务、网络和卷等，然后通过一个简单的命令来启动、停止和管理这些服务。</p> <p>Docker Compose 的主要作用包括：</p> <ul><li>简化多容器应用的部署：通过一个 YAML 文件，你可以定义多个容器之间的依赖关系、网络配置和卷挂载等，而不需要手动执行多个 docker run 命令。</li> <li>方便的服务管理：Docker Compose 提供了启动、停止、重启和查看服务状态等命令，方便你管理应用的多个容器。</li> <li>环境变量和配置文件：你可以在 YAML 文件中定义环境变量和配置文件，方便在不同环境中部署应用。</li> <li>服务发现和负载均衡：Docker Compose 可以自动创建和配置服务发现和负载均衡，方便应用之间的通信和负载均衡。</li></ul> <h4 id="docker-compose-文件基本结构"><a href="#docker-compose-文件基本结构" class="header-anchor">#</a> Docker Compose 文件基本结构</h4> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.8&quot;</span> <span class="token comment"># 定义版本， 表示当前使用的 docker-compose 语法的版本</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span> <span class="token comment"># 服务，可以存在多个</span>
+    <span class="token key atrule">servicename1</span><span class="token punctuation">:</span> <span class="token comment"># 服务名字，它也是内部 bridge 网络可以使用的 DNS name，如果不是集群模式相当于 docker run 的时候指定的一个名称，</span>
+   <span class="token comment">#集群（Swarm）模式是多个容器的逻辑抽象</span>
+        <span class="token key atrule">image</span><span class="token punctuation">:</span> <span class="token comment"># 镜像的名字</span>
+        <span class="token key atrule">command</span><span class="token punctuation">:</span> <span class="token comment"># 可选，如果设置，则会覆盖默认镜像里的 CMD 命令</span>
+        <span class="token key atrule">environment</span><span class="token punctuation">:</span> <span class="token comment"># 可选，等价于 docker container run 里的 --env 选项设置环境变量</span>
+        <span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 可选，等价于 docker container run 里的 -v 选项 绑定数据卷</span>
+        <span class="token key atrule">networks</span><span class="token punctuation">:</span> <span class="token comment"># 可选，等价于 docker container run 里的 --network 选项指定网络</span>
+        <span class="token key atrule">ports</span><span class="token punctuation">:</span> <span class="token comment"># 可选，等价于 docker container run 里的 -p 选项指定端口映射</span>
+        <span class="token key atrule">restart</span><span class="token punctuation">:</span> <span class="token comment"># 可选，控制容器的重启策略</span>
+        <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token comment">#构建目录</span>
+        <span class="token key atrule">depends_on</span><span class="token punctuation">:</span> <span class="token comment">#服务依赖配置</span>
+    <span class="token key atrule">servicename2</span><span class="token punctuation">:</span>
+        <span class="token key atrule">image</span><span class="token punctuation">:</span>
+        <span class="token key atrule">command</span><span class="token punctuation">:</span>
+        <span class="token key atrule">networks</span><span class="token punctuation">:</span>
+    	<span class="token key atrule">ports</span><span class="token punctuation">:</span>
+    <span class="token key atrule">servicename3</span><span class="token punctuation">:</span>
+    <span class="token comment">#...</span>
+<span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 可选，需要创建的数据卷，类似 docker volume create</span>
+  <span class="token key atrule">db_data</span><span class="token punctuation">:</span>
+<span class="token key atrule">networks</span><span class="token punctuation">:</span> <span class="token comment"># 可选，等价于 docker network create</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h4 id="docker-compose-常见命令"><a href="#docker-compose-常见命令" class="header-anchor">#</a> Docker Compose 常见命令</h4> <p><strong>启动</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 在当前目录下寻找 docker-compose.yml 文件，并根据其中定义的服务启动应用程序</span>
+<span class="token function">docker-compose</span> up
+<span class="token comment"># 后台启动</span>
+<span class="token function">docker-compose</span> up <span class="token parameter variable">-d</span>
+<span class="token comment"># 强制重新创建所有容器，即使它们已经存在</span>
+<span class="token function">docker-compose</span> up --force-recreate
+<span class="token comment"># 重新构建镜像</span>
+<span class="token function">docker-compose</span> up <span class="token parameter variable">--build</span>
+<span class="token comment"># 指定要启动的服务名称，而不是启动所有服务</span>
+<span class="token comment"># 可以同时指定多个服务，用空格分隔。</span>
+<span class="token function">docker-compose</span> up service_name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>另外，如果 Compose 文件名称不是 docker-compose.yml 也没问题，可以通过 -f 参数指定。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 指定使用 docker-compose.prod.yml 文件启动应用程序</span>
+<span class="token function">docker-compose</span> <span class="token parameter variable">-f</span> docker-compose.prod.yml up
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>暂停</strong></p> <p>docker-compose down用于停止并移除通过 docker-compose up 启动的容器和网络。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 在当前目录下寻找 docker-compose.yml 文件</span>
+<span class="token comment"># 根据其中定义移除启动的所有容器，网络和卷。</span>
+<span class="token function">docker-compose</span> down
+<span class="token comment"># 停止容器但不移除</span>
+<span class="token function">docker-compose</span> down <span class="token parameter variable">--stop</span>
+<span class="token comment"># 指定要停止和移除的特定服务，而不是停止和移除所有服务</span>
+<span class="token comment"># 可以同时指定多个服务，用空格分隔。</span>
+<span class="token function">docker-compose</span> down service_name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>查看</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 查看所有容器的状态信息</span>
+<span class="token function">docker-compose</span> <span class="token function">ps</span>
+<span class="token comment"># 只显示服务名称</span>
+<span class="token function">docker-compose</span> <span class="token function">ps</span> <span class="token parameter variable">--services</span>
+<span class="token comment"># 查看指定服务的容器</span>
+<span class="token function">docker-compose</span> <span class="token function">ps</span> service_name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">docker-compose</span> version <span class="token comment"># 查看版本</span>
+<span class="token function">docker-compose</span> images <span class="token comment"># 列出所有容器使用的镜像</span>
+<span class="token function">docker-compose</span> <span class="token function">kill</span> <span class="token comment"># 强制停止服务的容器</span>
+<span class="token function">docker-compose</span> <span class="token builtin class-name">exec</span> <span class="token comment"># 在容器中执行命令</span>
+<span class="token function">docker-compose</span> logs <span class="token comment"># 查看日志</span>
+<span class="token function">docker-compose</span> pause <span class="token comment"># 暂停服务</span>
+<span class="token function">docker-compose</span> unpause <span class="token comment"># 恢复服务</span>
+<span class="token function">docker-compose</span> push <span class="token comment"># 推送服务镜像</span>
+<span class="token function">docker-compose</span> start <span class="token comment"># 启动当前停止的某个容器</span>
+<span class="token function">docker-compose</span> stop <span class="token comment"># 停止当前运行的某个容器</span>
+<span class="token function">docker-compose</span> <span class="token function">rm</span> <span class="token comment"># 删除服务停止的容器</span>
+<span class="token function">docker-compose</span> <span class="token function">top</span> <span class="token comment"># 查看进程</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/18/2026</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-6ea58682 data-v-58d791b2><li class="level-2" data-v-6ea58682><a href="/blogs/backend/docker.html#容器介绍" class="sidebar-link reco-side-容器介绍" data-v-6ea58682>容器介绍</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#什么是容器" class="sidebar-link reco-side-什么是容器" data-v-6ea58682>什么是容器？</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#容器-vs-虚拟机" class="sidebar-link reco-side-容器-vs-虚拟机" data-v-6ea58682>容器 VS 虚拟机</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#docker-基本概念" class="sidebar-link reco-side-docker-基本概念" data-v-6ea58682>docker 基本概念</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#常见命令" class="sidebar-link reco-side-常见命令" data-v-6ea58682>常见命令</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#docker-数据管理" class="sidebar-link reco-side-docker-数据管理" data-v-6ea58682>Docker 数据管理</a></li><li class="level-3" data-v-6ea58682><a href="/blogs/backend/docker.html#docker-compose" class="sidebar-link reco-side-docker-compose" data-v-6ea58682>Docker Compose</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div class="Sakura" data-v-47ff9650><canvas id="canvas_sakura" style="z-index:200;" data-v-47ff9650></canvas></div><canvas id="vuepress-canvas-cursor"></canvas><div></div></div></div>
+    <script src="/assets/js/app.417c9d3b.js" defer></script><script src="/assets/js/4.277e189b.js" defer></script><script src="/assets/js/1.2abb3401.js" defer></script><script src="/assets/js/26.959e44c1.js" defer></script>
+  </body>
+</html>
